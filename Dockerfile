@@ -33,5 +33,5 @@ RUN apt-get update && \
 
 # Install Node.js modules
 RUN npm install -g npm && \
-    npm install -g node-gyp grunt gulp && \
+    npm install -g jshint jsonlint node-gyp grunt gulp && \
     npm cache clear && rm -rf /tmp/* /var/tmp/*
